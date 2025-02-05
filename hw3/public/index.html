@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--lucian-->
+<html>
+<head>
+<title>Cheesecake</title>
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+document.getElementById('h3').style.visibility = "hidden";
+</script>  
+<style>
+    #h3 {
+        visibility: hidden;
+    }
+    /* Dropdown Button (starter code at: https://www.w3schools.com/howto/howto_css_dropdown.asp)*/
+    .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    #dropdown-content {
+    max-height: 100px;
+    }   
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<h1>Cheesecake Order Form</h1>
+<!-- Image source -->
+<img src="https://www.crazyforcrust.com/wp-content/uploads/2020/10/classic-cheesecake-8-1024x1536.jpg" alt="alternatetext">
+<!-- Quantity label and selection -->
+<label for="topping" id="l">Quantity:</label>
+
+<select name="topping" id="quantity">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+</select>
+
+<!-- Topping label and selection -->
+<form id="topping">
+	<p>Topping:</p>
+    <input type="radio" id="option1" name="selection" value="Plain">
+    <label for="option1">Plain</label><br>
+        
+    <input type="radio" id="option2" name="selection" value="Cherry">
+    <label for="option2">Cherry</label><br>
+        
+    <input type="radio" id="option3" name="selection" value="Chocolate">
+    <label for="option3">Chocolate</label><br>
+</form>
+
+<!-- Text box for notes -->
+<label for="Notes" id="l2">Notes:</label>
+<textarea id="notes" name="notes" rows="4" cols="50">
+</textarea>
+<!-- Order button -->
+<script src="javascripts/js.js">
+</script>
+<button id="button" onclick="checkString()">Order</button>
+<h2 id="h2">Total Orders for
+    <div class="dropdown">
+    <button class="dropbtn" id="dropbtn"></button>
+    <div class="dropdown-content" style="overflow-y:scroll;" id="dropdown-content">
+      <a onclick="changeDropDown('Jan')">Jan</a>
+      <a onclick="changeDropDown('Feb')">Feb</a>
+      <a onclick="changeDropDown('Mar')">Mar</a>
+      <a onclick="changeDropDown('Apr')">Apr</a>
+      <a onclick="changeDropDown('May')">May</a>
+      <a onclick="changeDropDown('Jun')">Jun</a>
+      <a onclick="changeDropDown('Jul')">Jul</a>
+      <a onclick="changeDropDown('Aug')">Aug</a>
+      <a onclick="changeDropDown('Sep')">Sep</a>
+      <a onclick="changeDropDown('Oct')">Oct</a>
+      <a onclick="changeDropDown('Nov')">Nov</a>
+      <a onclick="changeDropDown('Dec')">Dec</a>
+    </div>
+  </div>
+</h2>
+<h3 id="h3">Your order has been placed!</h3>
+<p id="order"></p>
+<ul id="list">
+    <li>11 Cherry</li>
+    <li>17 Chocolate</li>
+    <li>31 Plain</li>
+</ul>
+<a href="stylesheets/CSS.html">Visit CSS site</a>
+</body>
+</html>

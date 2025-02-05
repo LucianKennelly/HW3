@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!--lucian-->
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+h2 {
+  font-family: Cursive;
+  font-size: 30px;
+}
+</style>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Cheesecake Order Form</h1>
+<!-- Image source -->
+<img src="https://www.crazyforcrust.com/wp-content/uploads/2020/10/classic-cheesecake-8-1024x1536.jpg" alt="alternatetext">
+<!-- Quantity label and selection -->
+<label for="topping">Quantity:</label>
+
+<select name="topping" id="topping">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+</select>
+
+<!-- Topping label and selection -->
+<form>
+	<p>Topping:</p>
+    <input type="radio" id="option1" name="selection" value="Option 1">
+    <label for="option1">Plain</label><br>
+        
+    <input type="radio" id="option2" name="selection" value="Option 2">
+    <label for="option2">Cherry</label><br>
+        
+    <input type="radio" id="option3" name="selection" value="Option 3">
+    <label for="option3">Chocolate</label><br>
+</form>
+
+<!-- Text box for notes -->
+<label for="Notes">Notes:</label>
+<textarea id="notes" name="notes" rows="4" cols="50">
+</textarea>
+<!-- Order button -->
+<button type="button">Order</button>
+<h2>Total Orders Last Month</h2>
+<ul>
+    <li>11 Cherry</li>
+    <li>17 Chocolate</li>
+    <li>31 Plain</li>
+</ul>
+</body>
+</html>
