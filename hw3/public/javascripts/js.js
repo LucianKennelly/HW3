@@ -1,4 +1,4 @@
-
+//Lucian
     function checkString() {
         // Get the value of the textbox
         var textboxValue = document.getElementById('notes').value;
@@ -27,3 +27,9 @@
         $("#dropbtn").text(x)
         
     }
+eventHandler = function( event ) {
+/* do stuff */
+}
+$(function() {
+$(".foo").click(eventHandler);
+});
