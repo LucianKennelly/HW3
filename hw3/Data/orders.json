@@ -1,0 +1,13 @@
+[
+    {"Jan": [{"flavor":"plain", "quantity": 1},{"flavor":"chocolate","quantity": 2},{"flavor":"cherry","quantity":3}]},
+    {"Feb": [{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 2},{"flavor":"cherry","quantity":0}]},
+    {"Mar":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"Apr":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"May":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"Jun":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"Jul":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"Aug":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"Oct":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"Nov":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]},
+    {"Dec":[{"flavor":"plain", "quantity": 0},{"flavor":"chocolate","quantity": 0},{"flavor":"cherry","quantity":0}]}
+]

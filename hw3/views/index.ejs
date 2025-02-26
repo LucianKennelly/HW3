@@ -3,10 +3,6 @@
 <html>
 <head>
 <title>Cheesecake</title>
-<script 
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-document.getElementById('h3').style.visibility = "hidden";
-</script>  
 <style>
     #h3 {
         visibility: hidden;
@@ -103,38 +99,6 @@ document.getElementById('h3').style.visibility = "hidden";
 <script src="javascripts/js.js">
 </script>
 <button id="button" onclick="checkString()">Order</button>
-
-<!-- Posting data file -->
- 
-<script>
-    var content = '';
-    $(document).ready(function() {
-        $.ajax({
-            type: "GET",
-            url: "./Data/orders.json",
-            dataType: "json",
-            success: function(json) {
-                $(json).find('item').each(function() {
-                    content += $(this).text() + '<br>';
-                });
-                $('#content').html(content);
-            }
-        });
-    });
-    $(document).ready(function() {
-        $('#button').click(function() {
-            $.post('https://localhost/3000/orders', {
-                content
-            })
-            .done(function(response) {
-                console.log('Success:', response);
-            })
-            .fail(function(error) {
-                console.error('Error:', error);
-            });
-        });
-    });
-</script>
 <h2 id="h2">Total Orders for
     <div class="dropdown">
     <button class="dropbtn" id="dropbtn"></button>
@@ -155,13 +119,13 @@ document.getElementById('h3').style.visibility = "hidden";
   </div>
 </h2>
 <h3 id="h3">Your order has been placed!</h3>
+<h4 id="h4">EJS Templating Engine</h4>
 <p id="order"></p>
 <ul id="list">
-    <li class="plain">11 Cherry</li>
-    <li class="chocolate">17 Chocolate</li>
-    <li class="cherry">31 Plain</li>
+    <li>11 Cherry</li>
+    <li>17 Chocolate</li>
+    <li>31 Plain</li>
 </ul>
-<p3 id="content"></p3>
 <a href="stylesheets/CSS.html">Visit CSS site</a>
 </body>
 </html>
